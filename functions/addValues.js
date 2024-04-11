@@ -3,7 +3,7 @@ function addValues(a, b) {
   const secondType = typeof b;
 
   if (firstType !== secondType) {
-    throw new Error('Addition not possible for the given types');
+    throw new Error('Addition not possible for values of different types');
   }
 
   switch (firstType) {
@@ -18,7 +18,7 @@ function addValues(a, b) {
         return a.concat(b);
       }
     default:
-      throw new Error('Addition not possible for the given types');
+      throw new Error('Addition not supported for values of type ' + firstType);
   }
 }
 
