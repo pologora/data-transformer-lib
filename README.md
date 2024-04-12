@@ -4,21 +4,25 @@ A lightweight npm package for data transformation utilities.
 
 ## Instalation
 
-You can install @pologora/data-transformer via npm:
+npm:
 
+```javascript
 npm install @pologora/data-transformer
+```
 
 ## Usage
 
+```javascript
 const {
-invertBoolean,
-addValues,
-stringifyValue,
-coerceToType,
-convertToNumber,
-convertToBoolean,
-convertToBigInt,
+  invertBoolean,
+  addValues,
+  stringifyValue,
+  coerceToType,
+  convertToNumber,
+  convertToBoolean,
+  convertToBigInt,
 } = require('@pologora/data-transformer');
+```
 
 ## Functions
 
