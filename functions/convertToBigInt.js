@@ -7,3 +7,5 @@ function convertToBigInt(value) {
     );
   }
 }
+
+module.exports = convertToBigInt;

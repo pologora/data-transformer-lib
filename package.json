@@ -1,5 +1,5 @@
 {
-  "name": "data-transformer",
+  "name": "@pologora/data-transformer",
   "version": "1.0.0",
   "description": "Advanced data transformation functions",
   "main": "index.js",

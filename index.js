@@ -1,5 +1,6 @@
 const addValues = require('./functions/addValues');
 const coerceToType = require('./functions/coerceToType');
+const convertToBigInt = require('./functions/convertToBigInt');
 const convertToBoolean = require('./functions/convertToBoolean');
 const convertToNumber = require('./functions/convertToNumber');
 const invertBoolean = require('./functions/invertBoolean');
@@ -12,4 +13,5 @@ module.exports = {
   coerceToType,
   convertToNumber,
   convertToBoolean,
+  convertToBigInt,
 };
