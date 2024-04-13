@@ -1,6 +1,10 @@
 function convertToNumber(value) {
   const valueType = typeof value;
 
+  if (valueType === 'number') {
+    return value;
+  }
+
   if (valueType === 'string') {
     const result = parseFloat(value);
     if (Object.is(result, NaN)) {

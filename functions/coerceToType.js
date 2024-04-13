@@ -1,3 +1,4 @@
+const convertToBigInt = require('./convertToBigInt');
 const convertToBoolean = require('./convertToBoolean');
 const convertToNumber = require('./convertToNumber');
 const stringifyValue = require('./stringifyValue');
@@ -16,7 +17,7 @@ function coerceToType(value, type) {
   }
 
   if (type === 'bigint') {
-    convertToBigInt(value);
+    return convertToBigInt(value);
   }
 
   throw new Error(
