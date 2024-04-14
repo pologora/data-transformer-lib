@@ -17,9 +17,12 @@ function addValues(a, b) {
       if (Array.isArray(a) && Array.isArray(b)) {
         return a.concat(b);
       }
+      break;
     default:
-      throw new Error('Addition not supported for values of type ' + firstType);
+      throw new Error(`Addition not supported for values of type ${firstType}`);
   }
+
+  return undefined;
 }
 
 module.exports = addValues;

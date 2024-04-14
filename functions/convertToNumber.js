@@ -1,6 +1,12 @@
 function convertToNumber(value) {
   const valueType = typeof value;
 
+  if (value == null) {
+    throw new Error(
+      'Impossible to convert null or underfind to number. Please consider alternative data types or methods.',
+    );
+  }
+
   if (valueType === 'number') {
     return value;
   }
@@ -9,7 +15,7 @@ function convertToNumber(value) {
     const result = parseFloat(value);
     if (Object.is(result, NaN)) {
       throw new Error(
-        `Impossible to convert ${value} to number. Please consider alternative data types or methods.`
+        `Impossible to convert ${value} to number. Please consider alternative data types or methods.`,
       );
     }
 
@@ -21,7 +27,7 @@ function convertToNumber(value) {
   }
 
   throw new Error(
-    `Impossible to convert ${valueType} to number. Please consider alternative data types or methods.`
+    `Impossible to convert ${valueType} to number. Please consider alternative data types or methods.`,
   );
 }
 

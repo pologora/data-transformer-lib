@@ -3,7 +3,7 @@ function convertToBigInt(value) {
     return BigInt(value);
   } catch (error) {
     throw new Error(
-      `Impossible to convert ${value} to BigInt. Please consider alternative data types or methods.`
+      `Impossible to convert ${value} to BigInt. Please consider alternative data types or methods.`,
     );
   }
 }

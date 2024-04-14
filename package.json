@@ -1,6 +1,6 @@
 {
   "name": "@pologora/data-transformer",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Advanced data transformation functions",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/pologora/data-transformer-lib/issues"
   },
-  "homepage": "https://github.com/pologora/data-transformer-lib#readme"
+  "homepage": "https://github.com/pologora/data-transformer-lib#readme",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
 }
