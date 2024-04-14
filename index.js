@@ -19,5 +19,3 @@ module.exports = {
   convertToObject,
   convertArrayToObject,
 };
-
-console.log(convertArrayToObject([2, 3, 4]));
